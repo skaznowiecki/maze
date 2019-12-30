@@ -1,15 +1,19 @@
-let createError = require('http-errors');
-let express = require('express');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const mazeRouter = require('./routes/maze');
 
 
-let app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+
+app.use('/maze', mazeRouter);
 
 
 // catch 404 and forward to error handler

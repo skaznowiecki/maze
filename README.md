@@ -30,10 +30,10 @@ $ npm run test
 #### Start frontend service without docker
 ```shell
 ## Start for development enviroment
-$ npm run start
+$ npm run dev
 
 ## Start for production enviroment
-$ npm run dev
+$ npm run build
 
 ```
 

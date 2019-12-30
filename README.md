@@ -7,6 +7,8 @@ For the unit tests, the Jest library was used, and Supertest was used for the fu
   * Docker
 
 ## Getting started
+Front : `http://localhost:8080`
+Back : `http://localhost:3000`
 
 #### Start service with docker
 ```

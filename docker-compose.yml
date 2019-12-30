@@ -1,0 +1,26 @@
+version: '2'
+services:
+  back:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    command: "npm run start:dev"
+    volumes:
+      - ./server:/app
+    networks:
+      webnet:
+  front:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command: "npm run dev"
+    volumes:
+      - ./client:/app
+    networks:
+      webnet: 
+networks:
+  webnet:

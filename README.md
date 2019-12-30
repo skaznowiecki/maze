@@ -8,7 +8,6 @@ For the unit tests, the Jest library was used, and Supertest was used for the fu
 
 ## Getting started
 
-
 #### Start service with docker
 ```
 docker-compose up
@@ -16,7 +15,7 @@ docker-compose up
 If you want to run background docker add the `-d` parameter.
 
 
-#### Start service without docker
+#### Start backend service without docker
 ```shell
 ## Start for development enviroment
 $ npm run start:dev
@@ -27,6 +26,17 @@ $ npm run start
 ## Run test
 $ npm run test
 ```
+
+#### Start frontend service without docker
+```shell
+## Start for development enviroment
+$ npm run start
+
+## Start for production enviroment
+$ npm run dev
+
+```
+
 
 
 
